@@ -28,5 +28,5 @@ module.exports = (pair) => {
         rawData: data,
       };
     })
-    .catch(err => return 'invalid currency pair');
+    .catch(err => {return 'invalid currency pair'});
 }
