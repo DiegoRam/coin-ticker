@@ -22,5 +22,5 @@ module.exports = (currencyPair) => {
         rawData: res.data,
       };
     })
-    .catch(err => console.error('bittrex api error:', err));
+    .catch(err => {return 'invalid currency pair'});
 }

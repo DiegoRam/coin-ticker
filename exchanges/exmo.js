@@ -21,5 +21,5 @@ module.exports = (pair) => {
       rawData: data,
     };
   })
-  .catch(err => console.error('exmo api error:', err));
+  .catch(err => {return 'invalid currency pair'});
 }

@@ -25,5 +25,5 @@ module.exports = (currencyPair) => {
         rawData: res.data[pair],
       };
     })
-  .catch(err => console.error('poloniex error:', err));
+  .catch(err => {return 'invalid currency pair'});
 }
